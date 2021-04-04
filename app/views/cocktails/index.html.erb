@@ -4,14 +4,15 @@
       <div class="d-flex row">
         <% @cocktails.each do |cocktail|  %>
           <div class="card m-10" style="width: 18rem;">
-              <img class="card-img-top" src="https://source.unsplash.com/180x100/?cocktail" alt="Card image cap">
+            <%= cl_image_tag("ap1v7abpb5fsb35m4nh9.jpg") %>
             <div class="card-body">
               <h5 class="card-title"> <%= cocktail.name %></h5>
-              <p class="card-text"></p>
-              <button class="btn btn-light"><%=link_to 'Lire la recette', cocktail_path(cocktail), class: "index-link" %></button>
+              <p class="card-text"> <%= cocktail.description %></p>
+              <button class="btn btn-dark"><%=link_to 'Lire la recette', cocktail_path(cocktail), class: "btn-link" %></button>
             </div>
           </div>
         <% end %>
       </div>
 </div>
+
 

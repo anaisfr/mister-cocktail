@@ -1,1 +1,22 @@
 // Specific CSS for your home-page
+
+h1,{
+  font-family: 'Pacifico', cursive;
+  margin: 20px;
+  font-size: 35px;
+  color: black;
+}
+
+h5 {
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+
+.btn-link {
+  color: white;
+  &hover {
+    text-decoration: none;
+  }
+}
