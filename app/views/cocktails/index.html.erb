@@ -4,7 +4,7 @@
       <div class="d-flex row">
         <% @cocktails.each do |cocktail|  %>
           <div class="card m-10" style="width: 18rem;">
-            <%= cl_image_tag("ap1v7abpb5fsb35m4nh9.jpg") %>
+            <img src="https://source.unsplash.com/random" alt="cocktail">
             <div class="card-body">
               <h5 class="card-title"> <%= cocktail.name %></h5>
               <p class="card-text"> <%= cocktail.description %></p>
